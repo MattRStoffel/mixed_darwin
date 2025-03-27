@@ -10,16 +10,13 @@ in {
   home-manager.users.matt = {
     home.file = {
       "${ghosttyConfigDir}/config".text = ''
-        window-padding-x = 10
         window-height = 45
         window-width = 120
 
         theme = "Dracula"
-        background-opacity = 0.99
-        background-blur-radius = 20
 
         font-family = {{ terminal_font }}
-        font-size = 15
+        font-size = 14
 
         clipboard-read = allow
         clipboard-paste-protection = false
