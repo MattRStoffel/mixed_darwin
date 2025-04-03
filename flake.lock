@@ -27,16 +27,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1741659557,
-        "narHash": "sha256-2oYzTnsW2gUBnD+U9S6Y4tbd8742Blb+uxiu+7vhEdc=",
-        "owner": "water-sucks",
+        "lastModified": 1738743987,
+        "narHash": "sha256-O3bnAfsObto6l2tQOmQlrO6Z2kD6yKwOWfs7pA0CpOc=",
+        "owner": "LnL7",
         "repo": "nix-darwin",
-        "rev": "d6c2ef79f1699eb05ab3dd3db81305ddbada7ef4",
+        "rev": "ae406c04577ff9a64087018c79b4fdc02468c87c",
         "type": "github"
       },
       "original": {
-        "owner": "water-sucks",
-        "ref": "allow-setting-casks-greedy",
+        "owner": "LnL7",
         "repo": "nix-darwin",
         "type": "github"
       }

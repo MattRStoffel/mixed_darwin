@@ -3,9 +3,9 @@
   homebrew = {
     enable = true;
 
-    caskOptions = {
-      greedy = true;
-    };
+    # caskOptions = {
+    #   greedy = true;
+    # };
 
     casks = [
       "alfred"
@@ -35,8 +35,8 @@
 
     onActivation = {
       cleanup = "zap";
-      autoUpdate = true;
-      upgrade = true;
+      # autoUpdate = true;
+      # upgrade = true;
     };
   };
 }

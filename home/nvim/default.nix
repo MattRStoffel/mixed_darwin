@@ -114,6 +114,7 @@
 
         # C, C++
         clang-tools
+        ccls
         cppcheck
         bear
 

@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nix-darwin.url = "github:water-sucks/nix-darwin/allow-setting-casks-greedy";
+    nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -15,12 +15,22 @@
     nixpkgs,
     home-manager,
   }: let
-    configuration = {pkgs, ...}: {
+    configuration = {
+      lib,
+      pkgs,
+      ...
+    }: {
       environment = {
         # systemPath = [];
         variables = {
           EDITOR = "nvim";
         };
+      };
+      fonts = {
+        packages = with pkgs; [
+          nerd-fonts.heavy-data
+        ];
+        fontDir.enable = lib.mkIf (!pkgs.stdenv.isDarwin) true;
       };
 
       nix.settings.experimental-features = "nix-command flakes"; # Necessary for using flakes on this system.
