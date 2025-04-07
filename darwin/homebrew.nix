@@ -33,10 +33,10 @@
       wipr-2 = 1662217862;
     };
 
-    onActivation = {
-      cleanup = "zap";
-      # autoUpdate = true;
-      # upgrade = true;
-    };
+    # onActivation = {
+    #   cleanup = "zap";
+    #   autoUpdate = true;
+    #   upgrade = true;
+    # };
   };
 }

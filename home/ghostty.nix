@@ -10,22 +10,18 @@ in {
   home-manager.users.matt = {
     home.file = {
       "${ghosttyConfigDir}/config".text = ''
-            window-height = 45
-            window-width = 120
+        window-height = 45
+        window-width = 120
 
-            theme = "Dracula"
+        theme = "Dracula"
 
-            font-family = {{ terminal_font }}
-            font-size = 14
+        font-family = {{ terminal_font }}
+        font-size = 14
 
-            clipboard-read = allow
-            clipboard-paste-protection = false
+        clipboard-read = allow
+        clipboard-paste-protection = false
 
-            keybind = global:cmd+grave_accent=toggle_quick_terminal
-        custom-shader = ./shaders/underwater.glsl
-        custom-shader = ./shaders/drunkard.glsl
-        custom-shader = ./shaders/crt.glsl
-        custom-shader = ./shaders/retro-terminal.glsl
+        keybind = global:cmd+grave_accent=toggle_quick_terminal
       '';
     };
   };

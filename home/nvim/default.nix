@@ -81,14 +81,14 @@
         }
 
         # Copilot
-        # {
-        #   plugin = copilot-lua;
-        #   type = "lua";
-        #   config = builtins.readFile ./plugins/copilot.lua;
-        # }
-        # CopilotChat-nvim
-        # plenary-nvim # for CopilotChat-nvim
-        # copilot-lualine
+        {
+          plugin = copilot-lua;
+          type = "lua";
+          config = builtins.readFile ./plugins/copilot.lua;
+        }
+        CopilotChat-nvim
+        plenary-nvim # for CopilotChat-nvim
+        copilot-lualine
 
         # Misc
         # vimtex
@@ -97,6 +97,8 @@
       # All the language servers
       extraPackages = with pkgs; [
         nodejs
+        nodePackages.typescript-language-server
+        harper
 
         # Python
         pyright

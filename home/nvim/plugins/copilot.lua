@@ -17,7 +17,7 @@ require("copilot").setup({
 		},
 	},
 	suggestion = {
-		enabled = false,
+		enabled = true,
 		auto_trigger = true,
 		hide_during_completion = true,
 		debounce = 75,
@@ -42,5 +42,4 @@ wk.add({
 	{ "<leader>cc", "<cmd>CopilotChat<CR>", desc = "Copilot Chat" },
 	{ "<leader>ce", "<cmd>CopilotChatExplain<CR>", desc = "Copilot Explain" },
 	{ "<leader>cf", "<cmd>CopilotChatFix<CR>", desc = "Copilot Fix" },
-	{ "<leader>cg", "<cmd>CopilotChatCommit<CR>", desc = "Copilot Commit Message" },
 })

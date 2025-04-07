@@ -13,6 +13,7 @@ local clangd_opts = {
 
 -- List of language servers to configure
 local servers = {
+	harper_ls = {}, -- Harper
 	pyright = {}, -- Python
 	lua_ls = {}, -- Lua
 	nil_ls = {}, -- Nix
@@ -21,6 +22,7 @@ local servers = {
 	bashls = {}, -- Shell scripting
 	gopls = {}, -- Go
 	texlab = {}, -- LaTeX
+	ts_ls = {},
 	astro = {}, -- astro
 	glsl_analyzer = {}, -- glsl
 }
